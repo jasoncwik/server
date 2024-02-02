@@ -1337,7 +1337,7 @@ COPY --from=min_container /opt/hpcx/ucx/lib/libucp.so.0 /opt/hpcx/ucx/lib/libucp
 COPY --from=min_container /opt/hpcx/ucx/lib/libucs.so.0 /opt/hpcx/ucx/lib/libucs.so.0
 COPY --from=min_container /opt/hpcx/ucx/lib/libuct.so.0 /opt/hpcx/ucx/lib/libuct.so.0
 
-COPY --from=min_container /usr/lib/{libs_arch}-linux-gnu/libcudnn.so.8 /usr/lib/{libs_arch}-linux-gnu/libcudnn.so.8
+COPY --from=min_container /usr/lib/{libs_arch}-linux-gnu/libcudnn.so.9 /usr/lib/{libs_arch}-linux-gnu/libcudnn.so.9
 
 # patchelf is needed to add deps of libcublasLt.so.12 to libtorch_cuda.so
 RUN apt-get update && \
